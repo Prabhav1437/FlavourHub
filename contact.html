@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | FlavourHUB</title>
+  <link rel="icon" type="image/svg+xml" href="media/flavourhub.svg">
+  <link rel="icon" type="image/png" href="media/flavourhub.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body class="page-contact">
+  <header class="navbar glass">
+    <div class="container nav-row">
+      <div class="logo">
+        <img src="media/flavourhub.svg" alt="FlavourHUB Logo" class="logo-icon">
+        <span>FlavourHUB</span>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a class="current" href="contact.html">Contact</a></li>
+        </ul>
+        <button id="menu-toggle" aria-label="open menu" class="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero glass">
+      <div class="container">
+        <h1>Let’s Connect</h1>
+        <p>Got questions, collabs, or cravings? Drop by or say hi — we love conversations over chai!</p>
+      </div>
+    </section>
+
+    <section class="contact-main">
+      <div class="container contact-grid">
+        <article class="contact-card glass">
+          <h3>Location</h3>
+          <p>42 Culinary Avenue<br>
+                Flavour District, Mumbai<br>
+                Maharashtra 400001, India</p>
+        </article>
+        <article class="contact-card glass">
+          <h3>Contact</h3>
+          <p>+91 98765 43210<br>hello@flavourhub.com</p>
+        </article>
+        <article class="contact-card glass">
+          <h3>Hours</h3>
+          <p>Mon–Thu: 12PM – 10PM<br>Fri–Sat: 12PM – 11PM<br>Sun: 1PM – 9PM</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-form-section">
+      <div class="container">
+        <div class="form-wrapper glass">
+          <div class="form-header">
+            <h2>Send Us a Message</h2>
+            <p>Have a question or want to make a reservation? We'd love to hear from you!</p>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210">
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject" required>
+                  <option value="">Select a topic</option>
+                  <option value="reservation">Reservation</option>
+                  <option value="catering">Catering Inquiry</option>
+                  <option value="feedback">Feedback</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" rows="6" placeholder="Tell us what's on your mind..." required></textarea>
+            </div>
+            <button type="submit" class="btn neon submit-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="location-section">
+      <div class="container">
+        <div class="location-wrapper glass">
+          <h2>Visit Us</h2>
+          <div class="location-content">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80" alt="FlavourHUB Restaurant Interior" class="restaurant-photo">
+            <div class="location-details">
+              <div class="address-card">
+                <h3>Our Address</h3>
+                <p>42 Culinary Avenue<br>
+                Flavour District, Mumbai<br>
+                Maharashtra 400001, India</p>
+              </div>
+              <div class="transport-info">
+                <p><strong>Parking:</strong> Free parking available for guests</p>
+                <p><strong>Metro:</strong> 5 minutes walk from Culinary Square Station</p>
+                <p><strong>Bus:</strong> Multiple bus routes stop nearby</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="social-section">
+      <div class="container">
+        <div class="social-wrapper glass">
+          <h2>Stay Connected</h2>
+          <p>Follow us on social media for the latest updates, special offers, and behind-the-scenes content!</p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/prabhav_jain__" class="social-link" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+              <span>Instagram</span>
+            </a>
+            <a href="https://www.linkedin.com/in/prabhav-jain-32386b328/" class="social-link" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/Prabhav1437" class="social-link" target="_blank">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer glass">
+      <div class="container footer-row">
+        <div class="footer-left">
+          <p>© 2025 <span class="footer-logo">FlavourHUB 🍴</span> — Eat Loud, Laugh Louder</p>
+          <p class="footer-tagline">Pure Veg • Crafted with Flavour & Passion</p>
+        </div>
+        <div class="footer-center">
+          <a class="footer-links" href="menu.html">Menu</a> • 
+          <a class="footer-links" href="about.html">About</a> • 
+          <a class="footer-links" href="contact.html">Contact</a>
+        </div>
+        <div class="footer-right">
+          <a href="https://www.instagram.com/prabhav_jain__" class="social-icon" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/prabhav-jain-32386b328/" class="social-icon" title="Linkedin"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/Prabhav1437" class="social-icon" title="Github"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </footer>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>

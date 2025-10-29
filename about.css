@@ -1,0 +1,327 @@
+:root {
+    --glass-border: rgba(148, 163, 184, 0.28);
+    --glass-highlight: linear-gradient(160deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.38));
+    --accent-primary: #677D6A;
+    --accent-secondary: #697565;
+}
+
+body.page-about main {
+    padding-top: 40px;
+    background: linear-gradient(180deg, #9DC08B 0%, #CAE0BC 50%, #F8F5E9 100%);
+}
+
+.page-about .page-hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    background: var(--glass-highlight);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 32px 80px rgba(98, 111, 71, 0.16);
+    border-radius: 24px;
+}
+
+.page-about .page-hero p {
+    max-width: 620px;
+    margin: 12px auto 0;
+    opacity: 0.96;
+    color: #475569;
+}
+
+.page-about .about-section {
+    padding: 80px 0 60px;
+    background: transparent;
+}
+
+.page-about .about-grid {
+    display: flex;
+    gap: 48px;
+    align-items: center;
+    padding: 28px;
+    border-radius: 24px;
+    background: var(--glass-highlight);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 35px 90px rgba(30, 64, 175, 0.18);
+}
+
+.page-about .about-grid h2 {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--accent-secondary);
+}
+
+.page-about .about-grid p {
+    margin: 0 0 16px;
+    opacity: 0.95;
+    line-height: 1.75;
+    color: #1f2937;
+}
+
+.page-about .about-grid img {
+    flex: 1 1 320px;
+    min-width: 280px;
+    border-radius: 20px;
+    object-fit: cover;
+    max-height: 380px;
+    box-shadow: 0 28px 70px rgba(30, 64, 175, 0.2);
+    border: 2px solid rgba(148, 163, 184, 0.3);
+}
+
+.page-about .about-grid img:hover {
+    transform: translateY(-4px) scale(1.01);
+    transition: transform 0.35s ease;
+}
+
+@media (max-width: 960px) {
+    .page-about .about-grid {
+        flex-direction: column;
+        text-align: center;
+        padding: 24px;
+    }
+
+    .page-about .about-grid img {
+        min-width: 0;
+        width: 100%;
+        max-height: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .page-about .about-grid img:hover {
+        transform: none;
+    }
+}
+
+.page-about .race-jam {
+    padding: 60px 0 60px;
+    background: transparent;
+}
+
+.page-about .race-grid {
+    display: flex;
+    gap: 48px;
+    align-items: center;
+    padding: 32px;
+    border-radius: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: var(--glass-highlight);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 35px 90px rgba(98, 111, 71, 0.18);
+}
+
+.page-about .race-text {
+    flex: 1;
+}
+
+.page-about .race-text h2 {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #1f2937;
+}
+
+.page-about .race-text p {
+    margin: 0 0 16px;
+    line-height: 1.75;
+    color: #1f2937;
+    opacity: 0.95;
+}
+
+.page-about .race-grid img {
+    flex: 1;
+    max-width: 450px;
+    border-radius: 20px;
+    object-fit: cover;
+    height: 320px;
+    box-shadow: 0 28px 70px rgba(30, 64, 175, 0.2);
+    border: 2px solid rgba(148, 163, 184, 0.3);
+    transition: transform 0.35s ease;
+}
+
+.page-about .race-grid img:hover {
+    transform: translateY(-4px) scale(1.02);
+}
+
+.page-about .values-section {
+    padding: 60px 0 60px;
+    background: transparent;
+}
+
+.page-about .values-section .section-head {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.page-about .values-section .section-head h2 {
+    font-family: var(--font-display);
+    font-size: 2.6rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #1f2937;
+}
+
+.page-about .values-section .section-head p {
+    color: #475569;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.page-about .values-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+}
+
+.page-about .value-card {
+    padding: 0;
+    text-align: center;
+    border-radius: 24px;
+    background: var(--glass-highlight);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 32px 80px rgba(98, 111, 71, 0.18);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    overflow: hidden;
+}
+
+.page-about .value-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 36px 90px rgba(98, 111, 71, 0.24);
+}
+
+.page-about .value-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 2px solid rgba(148, 163, 184, 0.3);
+}
+
+.page-about .value-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 20px 20px 12px;
+    color: var(--accent-secondary);
+}
+
+.page-about .value-card p {
+    margin: 0;
+    padding: 0 20px 24px;
+    line-height: 1.6;
+    color: #334155;
+    opacity: 0.95;
+    font-size: 0.95rem;
+}
+
+.page-about .team-section {
+    padding: 60px 0 80px;
+    background: transparent;
+}
+
+.page-about .team-section .section-head {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.page-about .team-section .section-head h2 {
+    font-family: var(--font-display);
+    font-size: 2.6rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #1f2937;
+}
+
+.page-about .team-section .section-head p {
+    color: #475569;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.page-about .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 36px;
+}
+
+.page-about .team-card {
+    padding: 0;
+    border-radius: 24px;
+    background: var(--glass-highlight);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 32px 80px rgba(30, 64, 175, 0.18);
+    overflow: hidden;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.page-about .team-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 40px 100px rgba(30, 64, 175, 0.24);
+}
+
+.page-about .team-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-bottom: 2px solid rgba(148, 163, 184, 0.3);
+}
+
+.page-about .team-info {
+    padding: 24px;
+}
+
+.page-about .team-info h3 {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0 0 6px;
+    color: var(--accent-secondary);
+}
+
+.page-about .team-role {
+    font-weight: 600;
+    color: var(--accent-primary);
+    margin: 0 0 12px;
+    font-size: 0.95rem;
+}
+
+.page-about .team-bio {
+    margin: 0;
+    line-height: 1.7;
+    color: #334155;
+    opacity: 0.95;
+}
+
+/* Responsive Design */
+@media (max-width: 960px) {
+    .page-about .race-grid {
+        flex-direction: column;
+        text-align: center;
+        padding: 24px;
+    }
+
+    .page-about .race-grid img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .page-about .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .page-about .team-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    .page-about .values-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
