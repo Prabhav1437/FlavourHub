@@ -133,7 +133,7 @@ project/
 
 ---
 
-## 📍 Contact Information
+## Contact Information
 
 - **Address**: 42 Culinary Avenue, Flavour District, Mumbai, Maharashtra 400001, India
 - **Phone**: [+91 98765 43210](tel:+919876543210)
@@ -145,7 +145,7 @@ project/
 
 ---
 
-## 🌐 Connect With Us
+## Connect With Us
 
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/prabhav_jain__)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/prabhav-jain-32386b328/)
@@ -153,7 +153,7 @@ project/
 
 ---
 
-## 🎯 Key Features Implementation
+## Key Features Implementation
 
 ### Responsive Navigation
 - Desktop: Full horizontal navigation bar
@@ -174,13 +174,13 @@ project/
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Unsplash** - For high-quality food photography
 - **Font Awesome** - For beautiful icons
@@ -189,7 +189,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 👨‍💻 Developer
+## Developer
 
 **Prabhav Jain**
 
@@ -197,5 +197,5 @@ This project is created for educational and portfolio purposes, showcasing moder
 
 ---
 
-**⭐ If you like this project, please consider giving it a star on GitHub!**
+** If you like this project, please consider giving it a star on GitHub!**
 
