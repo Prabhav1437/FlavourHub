@@ -7,371 +7,417 @@
   <link rel="icon" type="image/svg+xml" href="media/flavourhub.svg">
   <link rel="icon" type="image/png" href="media/flavourhub.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="menu.css">
 </head>
 <body class="page-menu">
-  <header class="navbar glass">
+  <header class="navbar">
     <div class="container nav-row">
-      <div class="logo">
-        <img src="media/flavourhub.svg" alt="FlavourHUB Logo" class="logo-icon">
-        <span>FlavourHUB</span>
-      </div>
-      <nav>
+      <div class="logo">FLAVOURHUB</div>
+      <nav class="nav-right">
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a class="current" href="menu.html">Menu</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-        <button id="menu-toggle" aria-label="open menu" class="hamburger">
+        <a href="contact.html" class="btn-order">Order Online</a>
+      </nav>
+      <button id="menu-toggle" aria-label="open menu" class="hamburger">
         <span></span><span></span><span></span>
       </button>
-      </nav>
     </div>
   </header>
 
   <main>
-    <section class="page-hero glass">
-      <div class="container">
-        <h1>Our Menu</h1>
-        <p>Where taste shifts gears and the spices go full throttle.</p>
-      </div>
-    </section>
+    <section class="menu-section">
+      <div class="menu-container">
+        <aside class="menu-sidebar">
+          <h1 class="menu-main-title">Menu</h1>
+          <nav class="menu-nav">
+            <a href="#popular" class="menu-nav-link active">popular</a>
+            <a href="#breakfast" class="menu-nav-link">breakfast</a>
+            <a href="#starters" class="menu-nav-link">starters</a>
+            <a href="#mains" class="menu-nav-link">main course</a>
+            <a href="#breads" class="menu-nav-link">breads & sides</a>
+            <a href="#desserts" class="menu-nav-link">desserts</a>
+            <a href="#drinks" class="menu-nav-link">beverages</a>
+          </nav>
+          <div class="menu-legend">
+            <span class="legend-item"><i class="fa-solid fa-leaf"></i> vegan</span>
+            <span class="legend-item"><i class="fa-solid fa-pepper-hot"></i> spicy</span>
+          </div>
+        </aside>
 
-    <section class="menu-grid-section">
-      <div class="container menu-grid">
-        <article class="menu-card glass">
-          <h3 style="font-size: 2rem;">Starters</h3>
-          <ol>
-            <li>
-              <span class="item-name">Smoky Paneer Tikka</span><span class="item-price">₹250</span>
-            </li>
-            <li>
-              <p class="item-desc">Char-grilled cottage cheese cubes marinated in rich Indian spices.</p>
-            </li>
-            <li>
-              <span class="item-name">Loaded Samosa Chaat</span><span class="item-price">₹180</span>
-            </li>
-            <li>
-              <p class="item-desc">Crispy samosas crushed and topped with chutneys, yogurt, and masala.</p>
-            </li>
-            <li>
-              <span class="item-name">Tandoori Momos</span><span class="item-price">₹220</span>
-            </li>
-            <li>
-              <p class="item-desc">Steamed dumplings tossed in spicy tandoori sauce — smoky & fiery!</p>
-            </li>
-            <li>
-              <span class="item-name">Hara Bhara Kebab</span><span class="item-price">₹200</span>
-            </li>
-            <li>
-              <p class="item-desc">Spinach and green pea patties with mint chutney on the side.</p>
-            </li>
-            <li>
-              <span class="item-name">Crispy Corn Delight</span><span class="item-price">₹190</span>
-            </li>
-            <li>
-              <p class="item-desc">Golden-fried corn kernels seasoned with zesty masala.</p>
-            </li>
-            <li>
-              <span class="item-name">Dahi Puri Shots</span><span class="item-price">₹160</span>
-            </li>
-            <li>
-              <p class="item-desc">Crispy puris filled with yogurt, chutneys & a burst of flavours.</p>
-            </li>
-          </ol>
-        </article>
+        <div class="menu-content">
+          <div class="menu-header">
+            <a href="contact.html" class="btn-reserve">reserve a table</a>
+          </div>
 
-        <article class="menu-card glass">
-          <h3 style="font-size: 2rem;">Main Course</h3>
-          <ol>
-              <li>
-                <span class="item-name">Paneer Lababdar</span><span class="item-price">₹340</span>
-              </li>
-              <li>
-                <p class="item-desc">Soft paneer in a creamy tomato gravy with aromatic spices and butter.</p>
-              </li>
+          <section id="popular" class="menu-category">
+            <div class="menu-items-grid">
+              <article class="menu-item-card card-coral">
+                <div class="card-header">
+                  <span class="card-category">starters</span>
+                </div>
+                <h3 class="card-title">Smoky Paneer Tikka</h3>
+                <span class="card-price">₹250</span>
+                <div class="card-image">
+                  <img src="https://images.unsplash.com/photo-1701579231320-cc2f7acad3cd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGFuZWVyJTIwdGlra2F8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=900" alt="Paneer Tikka">
+                  <button class="card-icon-btn"><i class="fa-solid fa-heart"></i></button>
+                </div>
+              </article>
 
-              <li>
-                <span class="item-name">Veg Biryani</span><span class="item-price">₹320</span>
-              </li>
-              <li>
-                <p class="item-desc">Long-grain basmati rice cooked with garden-fresh vegetables and saffron.</p>
-              </li>
+              <article class="menu-item-card card-yellow">
+                <div class="card-header">
+                  <span class="card-category">mains</span>
+                </div>
+                <h3 class="card-title">Paneer Lababdar</h3>
+                <span class="card-price">₹340</span>
+                <div class="card-image">
+                  <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=600&q=80" alt="Paneer Lababdar">
+                  <button class="card-icon-btn"><i class="fa-solid fa-heart"></i></button>
+                </div>
+              </article>
 
-              <li>
-                <span class="item-name">Dal Tadka</span><span class="item-price">₹280</span>
-              </li>
-              <li>
-                <p class="item-desc">Yellow lentils tempered with ghee, garlic, and cumin — a comfort classic.</p>
-              </li>
+              <article class="menu-item-card card-green">
+                <div class="card-header">
+                  <span class="card-category">mains</span>
+                </div>
+                <h3 class="card-title">Veg Biryani</h3>
+                <span class="card-price">₹320</span>
+                <div class="card-image">
+                  <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=600&q=80" alt="Veg Biryani">
+                  <button class="card-icon-btn"><i class="fa-solid fa-heart"></i></button>
+                </div>
+              </article>
 
-              <li>
-                <span class="item-name">Malai Kofta</span><span class="item-price">₹330</span>
-              </li>
-              <li>
-                <p class="item-desc">Soft paneer-potato dumplings simmered in a rich, creamy cashew gravy.</p>
-              </li>
+              <article class="menu-item-card card-peach">
+                <div class="card-header">
+                  <span class="card-category">desserts</span>
+                </div>
+                <h3 class="card-title">Rasmalai Cheesecake</h3>
+                <span class="card-price">₹220</span>
+                <div class="card-image">
+                  <img src="https://images.unsplash.com/photo-1652463843090-9204717dbc6e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2340" alt="Rasmalai">
+                  <button class="card-icon-btn"><i class="fa-solid fa-heart"></i></button>
+                </div>
+              </article>
 
-              <li>
-                <span class="item-name">Kadhai Veg</span><span class="item-price">₹310</span>
-              </li>
-              <li>
-                <p class="item-desc">A medley of sautéed vegetables tossed in spicy kadhai masala and bell peppers.</p>
-              </li>
-          </ol>
-        </article>
+              <article class="menu-item-card card-cream">
+                <div class="card-header">
+                  <span class="card-category">breads</span>
+                </div>
+                <h3 class="card-title">Garlic Naan</h3>
+                <span class="card-price">₹80</span>
+                <div class="card-image">
+                  <img src="https://media.istockphoto.com/id/1140752821/photo/indian-naan-bread-with-garlic-butter-on-wooden-table.webp?a=1&b=1&s=612x612&w=0&k=20&c=lOeYboRNvwONnykKUu7lN-UQg5c0cl0CKfDFiVFfhBk=" alt="Garlic Naan">
+                  <button class="card-icon-btn"><i class="fa-solid fa-heart"></i></button>
+                </div>
+              </article>
 
-        <article class="menu-card glass">
-          <h3 style="font-size: 2rem;">Breads & Sides</h3>
-          <ol>
-            <li>
-              <span class="item-name">Butter Naan</span><span class="item-price">₹60</span>
-            </li>
-            <li>
-              <p class="item-desc">Soft, fluffy naan brushed with melted butter — perfect with any curry.</p>
-            </li>
+              <article class="menu-item-card card-orange">
+                <div class="card-header">
+                  <span class="card-category">drinks</span>
+                </div>
+                <h3 class="card-title">Mango Lassi</h3>
+                <span class="card-price">₹140</span>
+                <div class="card-image">
+                  <img src="https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?auto=format&fit=crop&w=600&q=80" alt="Mango Lassi">
+                  <button class="card-icon-btn"><i class="fa-solid fa-heart"></i></button>
+                </div>
+              </article>
+            </div>
+          </section>
 
-            <li>
-              <span class="item-name">Garlic Naan</span><span class="item-price">₹80</span>
-            </li>
-            <li>
-              <p class="item-desc">Naan topped with fresh garlic and coriander for an aromatic kick.</p>
-            </li>
+          <section id="breakfast" class="menu-category">
+            <h2 class="category-title">Breakfast</h2>
+            <div class="menu-list">
+              <article class="menu-list-item">
+                <div class="list-item-info">
+                  <h3>Masala Dosa</h3>
+                  <p>Crispy rice crepe filled with spiced potato masala, served with sambhar and chutney.</p>
+                </div>
+                <span class="list-item-price">₹180</span>
+              </article>
+              <article class="menu-list-item">
+                <div class="list-item-info">
+                  <h3>Idli Sambhar <i class="fa-solid fa-leaf vegan-icon"></i></h3>
+                  <p>Steamed rice cakes served with lentil soup and coconut chutney.</p>
+                </div>
+                <span class="list-item-price">₹140</span>
+              </article>
+              <article class="menu-list-item">
+                <div class="list-item-info">
+                  <h3>Poha</h3>
+                  <p>Flattened rice cooked with onions, peas, and aromatic spices.</p>
+                </div>
+                <span class="list-item-price">₹120</span>
+              </article>
+              <article class="menu-list-item">
+                <div class="list-item-info">
+                  <h3>Aloo Paratha</h3>
+                  <p>Stuffed flatbread with spiced potato filling, served with curd and pickle.</p>
+                </div>
+                <span class="list-item-price">₹160</span>
+              </article>
+              <article class="menu-list-item">
+                <div class="list-item-info">
+                  <h3>Upma <i class="fa-solid fa-leaf vegan-icon"></i></h3>
+                  <p>Savory semolina porridge with vegetables and South Indian spices.</p>
+                </div>
+                <span class="list-item-price">₹130</span>
+              </article>
+              <article class="menu-list-item">
+                <div class="list-item-info">
+                  <h3>Chole Bhature</h3>
+                  <p>Spicy chickpea curry served with fluffy deep-fried bread.</p>
+                </div>
+                <span class="list-item-price">₹200</span>
+              </article>
+            </div>
+          </section>
 
-            <li>
-              <span class="item-name">Tandoori Roti</span><span class="item-price">₹40</span>
-            </li>
-            <li>
-              <p class="item-desc">Whole wheat flatbread cooked in a traditional tandoor — healthy & delicious.</p>
-            </li>
+          <section id="starters" class="menu-category">
+            <h2 class="category-title">Starters</h2>
+            <div class="menu-list">
+              <article class="menu-list-item">
+                <div class="list-item-info">
+                  <h3>Smoky Paneer Tikka</h3>
+                  <p>Char-grilled cottage cheese cubes marinated in rich Indian spices.</p>
+                </div>
+                <span class="list-item-price">₹250</span>
+              </article>
+              <article class="menu-list-item">
+                <div class="list-item-info">
+                  <h3>Loaded Samosa Chaat <i class="fa-solid fa-pepper-hot spicy-icon"></i></h3>
+                  <p>Crispy samosas crushed and topped with chutneys, yogurt, and masala.</p>
+                </div>
+                <span class="list-item-price">₹180</span>
+              </article>
+              <article class="menu-list-item">
+                <div class="list-item-info">
+                  <h3>Tandoori Momos</h3>
+                  <p>Steamed dumplings tossed in spicy tandoori sauce — smoky & fiery!</p>
+                </div>
+                <span class="list-item-price">₹220</span>
+              </article>
+              <article class="menu-list-item">
+                <div class="list-item-info">
+                  <h3>Hara Bhara Kebab <i class="fa-solid fa-leaf vegan-icon"></i></h3>
+                  <p>Spinach and green pea patties with mint chutney on the side.</p>
+                </div>
+                <span class="list-item-price">₹200</span>
+              </article>
+              <article class="menu-list-item">
+                <div class="list-item-info">
+                  <h3>Crispy Corn Delight</h3>
+                  <p>Golden-fried corn kernels seasoned with zesty masala.</p>
+                </div>
+                <span class="list-item-price">₹190</span>
+              </article>
+              <article class="menu-list-item">
+                <div class="list-item-info">
+                  <h3>Dahi Puri Shots</h3>
+                  <p>Crispy puris filled with yogurt, chutneys & a burst of flavours.</p>
+                </div>
+                <span class="list-item-price">₹160</span>
+              </article>
+            </div>
+          </section>
 
-            <li>
-              <span class="item-name">Laccha Paratha</span><span class="item-price">₹70</span>
-            </li>
-            <li>
-              <p class="item-desc">Layered, flaky paratha with a crispy texture and buttery taste.</p>
-            </li>
+          <section id="mains" class="menu-category">
+            <h2 class="category-title">Main Course</h2>
+            <div class="menu-list">
+              <article class="menu-list-item">
+                <div class="list-item-info">
+                  <h3>Paneer Lababdar</h3>
+                  <p>Soft paneer in a creamy tomato gravy with aromatic spices and butter.</p>
+                </div>
+                <span class="list-item-price">₹340</span>
+              </article>
+              <article class="menu-list-item">
+                <div class="list-item-info">
+                  <h3>Veg Biryani <i class="fa-solid fa-pepper-hot spicy-icon"></i></h3>
+                  <p>Long-grain basmati rice cooked with garden-fresh vegetables and saffron.</p>
+                </div>
+                <span class="list-item-price">₹320</span>
+              </article>
+              <article class="menu-list-item">
+                <div class="list-item-info">
+                  <h3>Dal Tadka <i class="fa-solid fa-leaf vegan-icon"></i></h3>
+                  <p>Yellow lentils tempered with ghee, garlic, and cumin — a comfort classic.</p>
+                </div>
+                <span class="list-item-price">₹280</span>
+              </article>
+              <article class="menu-list-item">
+                <div class="list-item-info">
+                  <h3>Malai Kofta</h3>
+                  <p>Soft paneer-potato dumplings simmered in a rich, creamy cashew gravy.</p>
+                </div>
+                <span class="list-item-price">₹330</span>
+              </article>
+              <article class="menu-list-item">
+                <div class="list-item-info">
+                  <h3>Kadhai Veg <i class="fa-solid fa-pepper-hot spicy-icon"></i></h3>
+                  <p>A medley of sautéed vegetables tossed in spicy kadhai masala and bell peppers.</p>
+                </div>
+                <span class="list-item-price">₹310</span>
+              </article>
+            </div>
+          </section>
 
-            <li>
-              <span class="item-name">Jeera Rice</span><span class="item-price">₹150</span>
-            </li>
-            <li>
-              <p class="item-desc">Fragrant basmati rice tempered with cumin seeds and ghee.</p>
-            </li>
+          <section id="breads" class="menu-category">
+            <h2 class="category-title">Breads & Sides</h2>
+            <div class="menu-list">
+              <article class="menu-list-item">
+                <div class="list-item-info">
+                  <h3>Butter Naan</h3>
+                  <p>Soft, fluffy naan brushed with melted butter — perfect with any curry.</p>
+                </div>
+                <span class="list-item-price">₹60</span>
+              </article>
+              <article class="menu-list-item">
+                <div class="list-item-info">
+                  <h3>Garlic Naan</h3>
+                  <p>Naan topped with fresh garlic and coriander for an aromatic kick.</p>
+                </div>
+                <span class="list-item-price">₹80</span>
+              </article>
+              <article class="menu-list-item">
+                <div class="list-item-info">
+                  <h3>Tandoori Roti <i class="fa-solid fa-leaf vegan-icon"></i></h3>
+                  <p>Whole wheat flatbread cooked in a traditional tandoor — healthy & delicious.</p>
+                </div>
+                <span class="list-item-price">₹40</span>
+              </article>
+              <article class="menu-list-item">
+                <div class="list-item-info">
+                  <h3>Laccha Paratha</h3>
+                  <p>Layered, flaky paratha with a crispy texture and buttery taste.</p>
+                </div>
+                <span class="list-item-price">₹70</span>
+              </article>
+              <article class="menu-list-item">
+                <div class="list-item-info">
+                  <h3>Jeera Rice <i class="fa-solid fa-leaf vegan-icon"></i></h3>
+                  <p>Fragrant basmati rice tempered with cumin seeds and ghee.</p>
+                </div>
+                <span class="list-item-price">₹150</span>
+              </article>
+            </div>
+          </section>
 
-            <li>
-              <span class="item-name">Green Salad</span><span class="item-price">₹120</span>
-            </li>
-            <li>
-              <p class="item-desc">Fresh cucumber, tomato, onion, and lettuce with lemon dressing.</p>
-            </li>
+          <section id="desserts" class="menu-category">
+            <h2 class="category-title">Desserts</h2>
+            <div class="menu-list">
+              <article class="menu-list-item">
+                <div class="list-item-info">
+                  <h3>Rasmalai Cheesecake</h3>
+                  <p>Fusion dessert blending soft Rasmalai with creamy cheesecake layers.</p>
+                </div>
+                <span class="list-item-price">₹220</span>
+              </article>
+              <article class="menu-list-item">
+                <div class="list-item-info">
+                  <h3>Chocolate Gulab Jamun</h3>
+                  <p>Traditional Gulab Jamun with a molten chocolate surprise inside.</p>
+                </div>
+                <span class="list-item-price">₹180</span>
+              </article>
+              <article class="menu-list-item">
+                <div class="list-item-info">
+                  <h3>Kesar Pista Kulfi</h3>
+                  <p>Indian frozen dessert infused with saffron and pistachios for royal flavour.</p>
+                </div>
+                <span class="list-item-price">₹160</span>
+              </article>
+              <article class="menu-list-item">
+                <div class="list-item-info">
+                  <h3>Gajar Ka Halwa</h3>
+                  <p>Warm carrot pudding cooked in milk, ghee, and garnished with nuts.</p>
+                </div>
+                <span class="list-item-price">₹190</span>
+              </article>
+            </div>
+          </section>
 
-            <li>
-              <span class="item-name">Papad Basket</span><span class="item-price">₹80</span>
-            </li>
-            <li>
-              <p class="item-desc">Assorted crispy papads — plain, masala, and roasted varieties.</p>
-            </li>
-          </ol>
-        </article>
-
-        <article class="menu-card glass">
-          <h3 style="font-size: 2rem;">Desserts</h3>
-          <ol>
-            <li>
-              <span class="item-name">Rasmalai Cheesecake</span><span class="item-price">₹220</span>
-            </li>
-            <li>
-              <p class="item-desc">Fusion dessert blending soft Rasmalai with creamy cheesecake layers.</p>
-            </li>
-
-            <li>
-              <span class="item-name">Chocolate Gulab Jamun</span><span class="item-price">₹180</span>
-            </li>
-            <li>
-              <p class="item-desc">Traditional Gulab Jamun with a molten chocolate surprise inside.</p>
-            </li>
-
-            <li>
-              <span class="item-name">Kesar Pista Kulfi</span><span class="item-price">₹160</span>
-            </li>
-            <li>
-              <p class="item-desc">Indian frozen dessert infused with saffron and pistachios for royal flavour.</p>
-            </li>
-
-            <li>
-              <span class="item-name">Mango Shrikhand</span><span class="item-price">₹170</span>
-            </li>
-            <li>
-              <p class="item-desc">Thick, sweetened yogurt flavoured with mango pulp and cardamom.</p>
-            </li>
-
-            <li>
-              <span class="item-name">Gajar Ka Halwa</span><span class="item-price">₹190</span>
-            </li>
-            <li>
-              <p class="item-desc">Warm carrot pudding cooked in milk, ghee, and garnished with nuts.</p>
-            </li>
-
-            <li>
-              <span class="item-name">Rabri Jalebi</span><span class="item-price">₹200</span>
-            </li>
-            <li>
-              <p class="item-desc">Crispy jalebis soaked in sugar syrup, served with creamy rabri.</p>
-            </li>
-
-            <li>
-              <span class="item-name">Italian Gelato</span><span class="item-price">₹280</span>
-            </li>
-            <li>
-              <p class="item-desc">Premium Italian gelato with a rich flavour of vanilla and hazelnut.</p>
-            </li>
-
-            <li>
-              <span class="item-name">Dark Chocolate Fondant</span><span class="item-price">₹320</span>
-            </li>
-            <li>
-              <p class="item-desc">Decadent molten chocolate cake with a liquid Belgian chocolate center, served with vanilla bean gelato.</p>
-            </li>
-          </ol>
-        </article>
-        <article class="menu-card glass">
-          <h3 style="font-size: 2rem;">Drinks</h3>
-          <ol>
-            <li>
-              <span class="item-name">Masala Mojito</span><span class="item-price">₹160</span>
-            </li>
-            <li>
-              <p class="item-desc">Refreshing mojito twist with lemon, mint, and Indian spice magic.</p>
-            </li>
-            <li>
-              <span class="item-name">Mango Lassi</span><span class="item-price">₹140</span>
-            </li>
-            <li>
-              <p class="item-desc">Creamy yogurt blended with ripe mango pulp — a tropical delight.</p>
-            </li>
-
-            <li>
-              <span class="item-name">Rose Falooda</span><span class="item-price">₹180</span>
-            </li>
-            <li>
-              <p class="item-desc">Layered dessert drink with rose syrup, sewai, chia seeds, and ice cream.</p>
-            </li>
-
-            <li>
-              <span class="item-name">Aam Panna</span><span class="item-price">₹130</span>
-            </li>
-            <li>
-              <p class="item-desc">Tangy raw mango drink with mint and black salt — perfect summer cooler.</p>
-            </li>
-
-            <li>
-              <span class="item-name">Cold Coffee</span><span class="item-price">₹150</span>
-            </li>
-            <li>
-              <p class="item-desc">Chilled coffee blended with milk, ice cream, and a hint of chocolate.</p>
-            </li>
-
-            <li>
-              <span class="item-name">Fresh Lime Soda</span><span class="item-price">₹90</span>
-            </li>
-            <li>
-              <p class="item-desc">Fizzy lemon drink with a choice of sweet, salty, or mixed flavour.</p>
-            </li>
-
-            <li>
-              <span class="item-name">Blueberry Lemonade</span><span class="item-price">₹220</span>
-            </li>
-            <li>
-              <p class="item-desc">Exotic color-changing lemonade infused with blueberry, fresh lemon, and a hint of honey.</p>
-            </li>
-
-            <li>
-              <span class="item-name">Caramel Iced Latte</span><span class="item-price">₹250</span>
-            </li>
-            <li>
-              <p class="item-desc">Premium espresso blended with caramel, oat milk over ice.</p>
-            </li>
-
-            <li>
-              <span class="item-name">Hibiscus Ice Tea</span><span class="item-price">₹200</span>
-            </li>
-            <li>
-              <p class="item-desc">Refreshing hibiscus tea with a hint of mint and a touch of honey.</p>
-            </li>
-
-            <li>
-              <span class="item-name">Matcha Mint Fusion</span><span class="item-price">₹240</span>
-            </li>
-            <li>
-              <p class="item-desc">Japanese matcha green tea whisked with fresh mint, honey, and coconut milk — a zen experience.</p>
-            </li>
-          </ol>
-        </article>
-        <article class="menu-card glass" id = "race-night">
-          <h3 style="font-size: 2rem;">Race Menu</h3>
-          <p class="race-desc">
-            Welcome to the <strong>Race Jam Specials</strong> — an exclusive weekend-only menu, 
-            served during our thrilling <strong>Friday, Saturday & Sunday Race Jam Sessions!</strong>  
-            Enjoy fast-track bites, vibrant drinks, and <strong>free refills every Sunday!</strong> 🏎️🔥
-          </p>
-          <ol>
-            <li>
-              <span class="item-name">Nitro Nachos</span><span class="item-price">₹230</span>
-            </li>
-            <li>
-              <p class="item-desc">Crispy nachos loaded with molten cheese, beans, and jalapeños — the perfect pit-lane snack!</p>
-            </li>
-            <li>
-              <span class="item-name">Turbo Paneer Wrap</span><span class="item-price">₹260</span>
-            </li>
-            <li>
-              <p class="item-desc">Tandoori paneer with mint mayo and veggies in a soft wrap — built for speed and flavor.</p>
-            </li>
-            <li>
-              <span class="item-name">Pit Stop Fries</span><span class="item-price">₹150</span>
-            </li>
-            <li>
-              <p class="item-desc">Crispy golden fries tossed in house masala & cheese dust — a must-have during the final lap.</p>
-            </li>
-            <li>
-              <span class="item-name">Speedster Smoothie</span><span class="item-price">₹180</span>
-            </li>
-            <li>
-              <p class="item-desc">Banana, honey, and almond milk blended into a creamy energy booster — your race fuel!</p>
-            </li>
-            <li>
-              <span class="item-name">Drift Mode Brownie</span><span class="item-price">₹210</span>
-            </li>
-            <li>
-              <p class="item-desc">Warm chocolate brownie topped with vanilla ice cream — a sweet finish after every race .</p>
-            </li>
-          </ol>
-        </article>
+          <section id="drinks" class="menu-category">
+            <h2 class="category-title">Beverages</h2>
+            <div class="menu-list">
+              <article class="menu-list-item">
+                <div class="list-item-info">
+                  <h3>Masala Mojito</h3>
+                  <p>Refreshing mojito twist with lemon, mint, and Indian spice magic.</p>
+                </div>
+                <span class="list-item-price">₹160</span>
+              </article>
+              <article class="menu-list-item">
+                <div class="list-item-info">
+                  <h3>Mango Lassi</h3>
+                  <p>Creamy yogurt blended with ripe mango pulp — a tropical delight.</p>
+                </div>
+                <span class="list-item-price">₹140</span>
+              </article>
+              <article class="menu-list-item">
+                <div class="list-item-info">
+                  <h3>Rose Falooda</h3>
+                  <p>Layered dessert drink with rose syrup, sewai, chia seeds, and ice cream.</p>
+                </div>
+                <span class="list-item-price">₹180</span>
+              </article>
+              <article class="menu-list-item">
+                <div class="list-item-info">
+                  <h3>Cold Coffee</h3>
+                  <p>Chilled coffee blended with milk, ice cream, and a hint of chocolate.</p>
+                </div>
+                <span class="list-item-price">₹150</span>
+              </article>
+            </div>
+          </section>
+        </div>
       </div>
     </section>
   </main>
-  <footer class="footer glass">
-      <div class="container footer-row">
-        <div class="footer-left">
-          <p>© 2025 <span class="footer-logo">FlavourHUB 🍴</span> — Eat Loud, Laugh Louder</p>
-          <p class="footer-tagline">Pure Veg • Crafted with Flavour & Passion</p>
+  <footer class="page-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <span class="footer-logo">FlavourHUB</span>
+        <p>Pure vegetarian dining crafted with passion, community, and a playful spirit.</p>
+        <div class="footer-pill"><i class="fa-solid fa-star"></i> Since 2020</div>
+      </div>
+      <div class="footer-column">
+        <h4>Visit Us</h4>
+        <p>42 Culinary Avenue<br>Flavour District, Mumbai<br>Maharashtra 400001</p>
+        <h4>Hours</h4>
+        <p>Mon–Thu: 12 PM – 10 PM<br>Fri–Sat: 12 PM – 11 PM<br>Sun: 1 PM – 9 PM</p>
+      </div>
+      <div class="footer-column">
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Connect</h4>
+        <div class="footer-contact-details">
+          <span><i class="fa-solid fa-phone"></i> +91 98765 43210</span>
+          <span><i class="fa-solid fa-envelope"></i> hello@flavourhub.com</span>
         </div>
-        <div class="footer-center">
-          <a class="footer-links" href="menu.html">Menu</a> • 
-          <a class="footer-links" href="about.html">About</a> • 
-          <a class="footer-links" href="contact.html">Contact</a>
-        </div>
-        <div class="footer-right">
-          <a href="https://www.instagram.com/prabhav_jain__" class="social-icon" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/prabhav-jain-32386b328/" class="social-icon" title="Linkedin"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://github.com/Prabhav1437" class="social-icon" title="Github"><i class="fa-brands fa-github"></i></a>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/prabhav_jain__" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/prabhav-jain-32386b328/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/Prabhav1437" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
         </div>
       </div>
-    </footer>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 FlavourHUB. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>

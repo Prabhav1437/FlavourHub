@@ -7,55 +7,74 @@
   <link rel="icon" type="image/svg+xml" href="media/flavourhub.svg">
   <link rel="icon" type="image/png" href="media/flavourhub.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="contact.css">
 </head>
 <body class="page-contact">
-  <header class="navbar glass">
+  <header class="navbar">
     <div class="container nav-row">
-      <div class="logo">
-        <img src="media/flavourhub.svg" alt="FlavourHUB Logo" class="logo-icon">
-        <span>FlavourHUB</span>
-      </div>
-      <nav>
+      <div class="logo">FLAVOURHUB</div>
+      <nav class="nav-right">
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="menu.html">Menu</a></li>
           <li><a href="about.html">About</a></li>
           <li><a class="current" href="contact.html">Contact</a></li>
         </ul>
-        <button id="menu-toggle" aria-label="open menu" class="hamburger">
+        <a href="contact.html" class="btn-order">Order Online</a>
+      </nav>
+      <button id="menu-toggle" aria-label="open menu" class="hamburger">
         <span></span><span></span><span></span>
       </button>
-      </nav>
     </div>
   </header>
 
   <main>
-    <section class="page-hero glass">
-      <div class="container">
-        <h1>Let’s Connect</h1>
-        <p>Got questions, collabs, or cravings? Drop by or say hi — we love conversations over chai!</p>
+    <section class="contact-hero">
+      <div class="container contact-hero-content">
+        <div class="hero-text">
+          <span class="contact-badge"><i class="fa-solid fa-location-dot"></i> Visit Us</span>
+          <h1>LET'S CONNECT OVER GREAT FOOD</h1>
+          <p>Whether you have questions, want to make a reservation, or just want to say hello, we'd love to hear from you!</p>
+        </div>
       </div>
     </section>
 
-    <section class="contact-main">
-      <div class="container contact-grid">
-        <article class="contact-card glass">
-          <h3>Location</h3>
-          <p>42 Culinary Avenue<br>
+    <section class="contact-info-section">
+      <div class="container">
+        <div class="contact-info-grid">
+          <article class="info-card">
+            <div class="info-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <h3>Visit Us</h3>
+            <p>42 Culinary Avenue<br>
                 Flavour District, Mumbai<br>
                 Maharashtra 400001, India</p>
-        </article>
-        <article class="contact-card glass">
-          <h3>Contact</h3>
-          <p>+91 98765 43210<br>hello@flavourhub.com</p>
-        </article>
-        <article class="contact-card glass">
-          <h3>Hours</h3>
-          <p>Mon–Thu: 12PM – 10PM<br>Fri–Sat: 12PM – 11PM<br>Sun: 1PM – 9PM</p>
-        </article>
+          </article>
+          <article class="info-card">
+            <div class="info-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <h3>Call Us</h3>
+            <p>+91 98765 43210</p>
+          </article>
+          <article class="info-card">
+            <div class="info-icon">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+            <h3>Opening Hours</h3>
+            <p>Mon–Thu: 12PM – 10PM<br>Fri–Sat: 12PM – 11PM<br>Sun: 1PM – 9PM</p>
+          </article>
+          <article class="info-card">
+            <div class="info-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <h3>Email Us</h3>
+            <p>hello@flavourhub.com</p>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -150,24 +169,44 @@
       </div>
     </section>
   </main>
-  <footer class="footer glass">
-      <div class="container footer-row">
-        <div class="footer-left">
-          <p>© 2025 <span class="footer-logo">FlavourHUB 🍴</span> — Eat Loud, Laugh Louder</p>
-          <p class="footer-tagline">Pure Veg • Crafted with Flavour & Passion</p>
+  <footer class="page-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <span class="footer-logo">FlavourHUB</span>
+        <p>Pure vegetarian dining crafted with passion, community, and a playful spirit.</p>
+        <div class="footer-pill"><i class="fa-solid fa-star"></i> Since 2020</div>
+      </div>
+      <div class="footer-column">
+        <h4>Visit Us</h4>
+        <p>42 Culinary Avenue<br>Flavour District, Mumbai<br>Maharashtra 400001</p>
+        <h4>Hours</h4>
+        <p>Mon–Thu: 12 PM – 10 PM<br>Fri–Sat: 12 PM – 11 PM<br>Sun: 1 PM – 9 PM</p>
+      </div>
+      <div class="footer-column">
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Connect</h4>
+        <div class="footer-contact-details">
+          <span><i class="fa-solid fa-phone"></i> +91 98765 43210</span>
+          <span><i class="fa-solid fa-envelope"></i> hello@flavourhub.com</span>
         </div>
-        <div class="footer-center">
-          <a class="footer-links" href="menu.html">Menu</a> • 
-          <a class="footer-links" href="about.html">About</a> • 
-          <a class="footer-links" href="contact.html">Contact</a>
-        </div>
-        <div class="footer-right">
-          <a href="https://www.instagram.com/prabhav_jain__" class="social-icon" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/prabhav-jain-32386b328/" class="social-icon" title="Linkedin"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://github.com/Prabhav1437" class="social-icon" title="Github"><i class="fa-brands fa-github"></i></a>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/prabhav_jain__" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/prabhav-jain-32386b328/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/Prabhav1437" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
         </div>
       </div>
-    </footer>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 FlavourHUB. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>

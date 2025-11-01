@@ -1,22 +1,19 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>FlavourHUB — Funk Up Your Taste</title>
+  <title>FlavourHUB — We Bring Flavors To Life</title>
   <link rel="icon" type="image/svg+xml" href="media/flavourhub.svg">
   <link rel="icon" type="image/png" href="media/flavourhub.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="navbar glass" id="site-nav">
+  <header class="navbar">
     <div class="container nav-row">
-      <div class="logo">
-        <img src="media/flavourhub.svg" alt="FlavourHUB Logo" class="logo-icon">
-        <span>FlavourHUB</span>
-      </div>
+      <div class="logo">FLAVOURHUB</div>
       <nav class="nav-right">
         <ul class="nav-links">
           <li><a class="current" href="index.html">Home</a></li>
@@ -24,6 +21,7 @@
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
+        <a href="contact.html" class="btn-order">Order Online</a>
       </nav>
       <button id="menu-toggle" aria-label="open menu" class="hamburger">
         <span></span><span></span><span></span>
@@ -31,123 +29,227 @@
     </div>
   </header>
   <main>
-    <section class="hero" id="hero">
-      <div class="container hero-inner">
-        <div class="hero-content">
-          <span class="hero-badge">Your Flavor Journey Starts Here</span>
-          <h1 class="hero-title">Discover Your <span class="hero-title-highlight">Perfect Bite</span></h1>
-          <p class="hero-sub hero-lead">Modern dining playground helping food lovers uncover signature dishes, plan race-night menus, and reserve the hottest seats with flair.</p>
-          <div class="hero-ctas">
-            <a href="menu.html" class="btn neon">Explore Menu</a>
-            <a href="contact.html" class="btn ghost">Reserve Table</a>
+    <section class="hero">
+  <div class="hero-content">
+    <h1>FLAVOURHUB</h1>
+    <p>Where Modern Taste Meets Classic Soul</p>
+  </div>
+
+  <div class="hero-images">
+    <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1380" alt="Dish Left" class="left-img" />
+    <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1365" alt="Dish Right" class="right-img" />
+  </div>
+</section>
+
+
+    <section class="features-bar">
+      <div class="container">
+        <div class="features-scroll">
+          <div class="feature-item">
+            <i class="fa-solid fa-leaf"></i>
+            <span>FRESH AND ORGANIC</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-leaf"></i>
+            <span>FRESH AND ORGANIC</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-leaf"></i>
+            <span>FRESH AND ORGANIC</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-leaf"></i>
+            <span>FRESH AND ORGANIC</span>
           </div>
         </div>
-        <div class="hero-stats">
-          <article class="stat-card glass card-elevated">
-            <span class="stat-icon"><i class="fa-solid fa-utensils"></i></span>
-            <h3>5K+</h3>
-            <p>Happy Guests Served</p>
-          </article>
-          <article class="stat-card glass card-elevated">
-            <span class="stat-icon"><i class="fa-solid fa-pepper-hot"></i></span>
-            <h3>120+</h3>
-            <p>Signature Spice Mixes</p>
-          </article>
-          <article class="stat-card glass card-elevated">
-            <span class="stat-icon"><i class="fa-solid fa-star"></i></span>
-            <h3>4.9</h3>
-            <p>Guest Rating Score</p>
-          </article>
+      </div>
+    </section>
+
+    <section class="weekly-delights">
+      <div class="container">
+        <div class="section-header">
+          <h2>WEEKLY DELIGHTS</h2>
+          <p>New week, new cravings! Explore our freshly updated special offers designed to tantalize your taste buds.</p>
         </div>
-      </div>
-    </section>
-    <div class="hero-arrow">
-      <a class="arrow-link" href="#signature" aria-label="Scroll to signature dishes">
-        <i class="arrow down"></i>
-      </a>
-    </div>
-    <section class="signature" id="signature">
-      <div class="container section-head">
-        <h2>Signature Hits</h2>
-        <p>Bold, colorful plates inspired by streets & festivals across India.</p>
-      </div>
-      <div class="container cards-grid">
-        <article class="card glass card-heavy">
-          <img src="https://media.istockphoto.com/id/1334542164/photo/indian-food-speciality-tandoori-mix-platter-includes-chicken-tikka-lamb-seekh-kebab-fish.webp?a=1&b=1&s=612x612&w=0&k=20&c=GN6HddoDGsRf3vAxvo5Fd0O1bYCA4THn7aqj0mLBJ4U=" alt="">
-          <h3>Desi Fiesta Platter</h3>
-          <p>Chaotic. Tangy. Crispy. Designed for sharing and shouting about.</p>
-          <a href="menu.html" class="text-link">See on menu →</a>
-        </article>
-        <article class="card glass card-heavy">
-          <img src="https://images.unsplash.com/photo-1481931098730-318b6f776db0?auto=format&fit=crop&w=1000&q=80" alt="">
-          <h3>Tandoori Groove</h3>
-          <p>Live grill & smoky charm — tastes like festival evenings.</p>
-          <a href="menu.html" class="text-link">See on menu →</a>
-        </article>
-        <article class="card glass card-heavy">
-          <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=1000&q=80" alt="">
-          <h3>Sweet Beats</h3>
-          <p>Mithai reimagined: bold, modern, and dangerously delicious.</p>
-          <a href="menu.html" class="text-link">See on menu →</a>
-        </article>
-        <article class="card glass card-heavy race-night-card">
-          <img src="media/Grid.jpg" alt="Race night tasting menu">
-          <h3>Race Night Grid</h3>
-          <p>Grand Prix weekend tasting seats with circuit-inspired courses and pairings.</p>
-          <a href="menu.html#race-night" class="text-link">Preview the lineup →</a>
-        </article>
-      </div>
-    </section>
-    <section class="f1-section" id="f1">
-      <div class="container f1-grid">
-        <div class="f1-media glass f1-video-wrap">
-          <video class="f1-video" autoplay muted loop playsinline>
-            <source src="media/CL16.mp4" type="video/mp4">
-            Sorry — your browser cannot play this video.
-          </video>
-          <div class="f1-overlay glass">
+        <div class="delights-grid">
+          <article class="delight-card card-1">
+            <div class="delight-image">
+              <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=600&q=80" alt="Paneer Special">
+              
             </div>
-        </div>
-        <div class="f1-info glass">
-            <h3 class="f1-title">Like a champion's pit-stop, we sharpen every bite.</h3>
-            <p class="f1-blurb">Just as a legendary racing team brings precision to every lap, FlavourHUB brings meticulous fire to every dish — tuned for speed, intensity and flair.</p>
-            <a href="menu.html#race-night" class="btn small neon">See the Race Menu</a>
-          <h2>Racing Flavours</h2>
-          <p>Our limited-time 'Pit-Stop' tasting menu — fast, furious, and packed with heat. Expect sharp spice hits and clean finishes, like a team tuned to win. Race Night seatings unlock bespoke pairings and chef-driven surprises mapped to each circuit.</p>
-          <ul class="race-list">
-            <li>CL16-inspired spice dash</li>
-            <li>Carbon-sear grilling</li>
-            <li>Rapid-fire dessert sequence</li>
-          </ul>
+            <div class="delight-content">
+              <h3>PANEER SPECIAL</h3>
+              <p class="delight-day">Monday</p>
+              <p class="delight-desc">Creamy paneer dishes with aromatic spices, naan, and refreshing lassi.</p>
+            </div>
+          </article>
+          <article class="delight-card card-2">
+            <div class="delight-image">
+              <img src="https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=600&q=80" alt="Dosa Delight">
+              
+            </div>
+            <div class="delight-content">
+              <h3>DOSA DELIGHT</h3>
+              <p class="delight-day">Tuesday</p>
+              <p class="delight-desc">Crispy dosas with sambhar, chutney trio, and filter coffee.</p>
+            </div>
+          </article>
+          <article class="delight-card card-3">
+            <div class="delight-image">
+              <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=600&q=80" alt="Biryani Bonanza">
+              
+            </div>
+            <div class="delight-content">
+              <h3>BIRYANI BONANZA</h3>
+              <p class="delight-day">Wednesday</p>
+              <p class="delight-desc">Fragrant veg biryani with raita, papad, and gulab jamun.</p>
+            </div>
+          </article>
+          <article class="delight-card card-4">
+            <div class="delight-image">
+              <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" alt="Weekend Brunch">
+              
+            </div>
+            <div class="delight-content">
+              <h3>WEEKEND FEAST</h3>
+              <p class="delight-day">Sat & Sun</p>
+              <p class="delight-desc">Grand buffet with unlimited starters, mains, and desserts.</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
-    <section class="big-cta section-reveal">
-      <div class="container cta-heavy glass">
-        <h2>Book, Eat, Repeat</h2>
-        <p>Reserve a table for the next flavor showdown.</p>
-        <a href="contact.html" class="btn neon">Reserve a Table</a>
+
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number">5+</div>
+            <div class="stat-label">Years of Excellence</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">5K+</div>
+            <div class="stat-label">Happy Customers</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">20+</div>
+            <div class="stat-label">Dishes on Menu</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">4.9★</div>
+            <div class="stat-label">Average Rating</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience-section">
+      <div class="container experience-grid">
+        <div class="experience-content">
+          <h2>MORE THAN JUST A MEAL, IT'S AN EXPERIENCE</h2>
+          <p>FlavourHUB isn't just about satisfying your hunger, it's about embarking on a delicious adventure. We take pride in crafting dishes that are an explosion of taste and aroma.</p>
+          <a href="menu.html" class="btn-hero">Discover All Menu →</a>
+        </div>
+        <div class="experience-image">
+          <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=800&q=80" alt="Chef Cooking">
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>WHAT OUR GUESTS SAY</h2>
+          <p>Real stories from real food lovers</p>
+        </div>
+        <div class="testimonials-grid">
+          <article class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"The best vegetarian food I've had in Mumbai! The paneer tikka is absolutely divine, and the service is impeccable."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">R</div>
+              <div class="author-info">
+                <h4>Riya Sharma</h4>
+                <p>Food Blogger</p>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"FlavourHUB has become our family's favorite spot. The ambiance is perfect, and every dish is crafted with love and authentic flavors."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">A</div>
+              <div class="author-info">
+                <h4>Arjun Patel</h4>
+                <p>Regular Customer</p>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Amazing variety and incredible taste! The weekly specials are always exciting. Highly recommend the biryani and rasmalai cheesecake!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">P</div>
+              <div class="author-info">
+                <h4>Priya Mehta</h4>
+                <p>Food Enthusiast</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container cta-content">
+        <div class="cta-icon"><i class="fa-solid fa-utensils"></i></div>
+        <h2>READY TO EXPERIENCE THE FLAVOUR?</h2>
+        <p>Reserve your table today and embark on a culinary journey that celebrates authentic Indian vegetarian cuisine.</p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn-cta primary">Reserve a Table</a>
+          <a href="menu.html" class="btn-cta secondary">View Full Menu</a>
+        </div>
       </div>
     </section>
   </main>
-  <footer class="footer glass">
-      <div class="container footer-row">
-        <div class="footer-left">
-          <p>© 2025 <span class="footer-logo">FlavourHUB</span> — Eat Loud, Laugh Louder</p>
-          <p class="footer-tagline">Pure Veg • Crafted with Flavour & Passion</p>
+  <footer class="page-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <span class="footer-logo">FlavourHUB</span>
+        <p>Pure vegetarian dining crafted with passion, community, and a playful spirit.</p>
+        <div class="footer-pill"><i class="fa-solid fa-star"></i> Since 2020</div>
+      </div>
+      <div class="footer-column">
+        <h4>Visit Us</h4>
+        <p>42 Culinary Avenue<br>Flavour District, Mumbai<br>Maharashtra 400001</p>
+        <h4>Hours</h4>
+        <p>Mon–Thu: 12 PM – 10 PM<br>Fri–Sat: 12 PM – 11 PM<br>Sun: 1 PM – 9 PM</p>
+      </div>
+      <div class="footer-column">
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Connect</h4>
+        <div class="footer-contact-details">
+          <span><i class="fa-solid fa-phone"></i> +91 98765 43210</span>
+          <span><i class="fa-solid fa-envelope"></i> hello@flavourhub.com</span>
         </div>
-        <div class="footer-center">
-          <a class="footer-links" href="menu.html">Menu</a> • 
-          <a class="footer-links" href="about.html">About</a> • 
-          <a class="footer-links" href="contact.html">Contact</a>
-        </div>
-        <div class="footer-right">
-          <a href="https://www.instagram.com/prabhav_jain__" class="social-icon" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/prabhav-jain-32386b328/" class="social-icon" title="Linkedin"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://github.com/Prabhav1437" class="social-icon" title="Github"><i class="fa-brands fa-github"></i></a>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/prabhav_jain__" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/prabhav-jain-32386b328/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/Prabhav1437" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
         </div>
       </div>
-    </footer>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 FlavourHUB. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
