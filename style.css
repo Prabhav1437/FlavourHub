@@ -163,7 +163,8 @@ a {
 }
 
 .features-bar {
-    background: var(--yellow-primary);
+    /* background: radial-gradient(circle at center, rgba(0, 0, 0, 0.576) 0%, rgba(0, 0, 0, 0.971) 100%) */
+    background: rgba(0,0,0,0.9234);
     padding: 20px 0;
 }
 
@@ -188,14 +189,15 @@ a {
     align-items: center;
     gap: 12px;
     white-space: nowrap;
-    color: var(--text-dark);
+    /* color: var(--text-dark); */
+    color:#cccccc;
     font-weight: 600;
     font-size: 1.1rem;
 }
 
 .feature-item i {
     font-size: 1.4rem;
-    color: #4CAF50;
+    color: #f1f4f1;
     animation: leafSway 3.2s ease-in-out infinite;
     transform-origin: center bottom;
 }
