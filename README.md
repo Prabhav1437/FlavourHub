@@ -87,11 +87,6 @@ project/
 ├── contact.css         # Contact page specific styles
 ├── media/              # Media assets folder
 │   ├── flavourhub.svg  # Logo SVG
-│   ├── flavourhub.png  # Logo PNG
-│   ├── Grid.jpg        # Grid background
-│   ├── platter.jpg     # Food platter image
-│   ├── tandoor.jpg     # Tandoor cooking image
-│   └── CL16.mp4        # Background video
 ├── LICENSE             # MIT License
 └── README.md           # Project documentation
 ```
