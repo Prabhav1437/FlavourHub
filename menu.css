@@ -17,10 +17,13 @@ html{
     display: grid;
     grid-template-columns: 250px 1fr;
     gap: 40px;
-    background: white;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 24px;
     padding: 40px;
     min-height: 80vh;
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
 .menu-sidebar {
@@ -47,16 +50,45 @@ html{
     padding: 12px 16px;
     color: var(--text-medium);
     font-size: 0.95rem;
-    border-radius: 8px;
-    transition: all 0.3s;
+    border-radius: 12px;
+    transition: all 0s cubic-bezier(0.4, 0, 0.2, 1);
     text-transform: lowercase;
 }
 
-.menu-nav-link:hover,
-.menu-nav-link.active {
-    background: var(--cream-bg);
+.menu-nav-link:hover {
+    background: rgba(154, 154, 154, 0.15);
+    backdrop-filter: blur(10px);
     color: var(--text-dark);
     font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.menu-nav-link.active {
+    background: rgba(154, 154, 154, 0.25);
+    backdrop-filter: blur(10px);
+    color: var(--text-dark);
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.menu-container:has(#popular:target) .menu-nav a[href="#popular"],
+.menu-container:has(#breakfast:target) .menu-nav a[href="#breakfast"],
+.menu-container:has(#starters:target) .menu-nav a[href="#starters"],
+.menu-container:has(#mains:target) .menu-nav a[href="#mains"],
+.menu-container:has(#breads:target) .menu-nav a[href="#breads"],
+.menu-container:has(#desserts:target) .menu-nav a[href="#desserts"],
+.menu-container:has(#drinks:target) .menu-nav a[href="#drinks"] {
+    background: rgba(154, 154, 154, 0.25);
+    backdrop-filter: blur(10px);
+    color: var(--text-dark);
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.menu-nav-link:active {
+    background: rgba(245, 239, 230, 0.8);
+    transform: scale(0.98);
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 .menu-legend {
@@ -101,16 +133,25 @@ html{
     padding: 12px 28px;
     background: var(--text-dark);
     color: white;
-    border-radius: 8px;
+    border-radius: 16px;
     font-weight: 600;
     font-size: 0.9rem;
-    transition: all 0.3s;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     text-transform: lowercase;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .btn-reserve:hover {
     background: var(--coral-primary);
     transform: translateY(-2px);
+    box-shadow: 0 12px 32px rgba(216, 93, 111, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.btn-reserve:active {
+    background: var(--coral-dark);
+    transform: translateY(0) scale(0.98);
+    box-shadow: inset 0 3px 12px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 .menu-category {
@@ -132,17 +173,23 @@ html{
 }
 
 .menu-item-card {
-    border-radius: 16px;
+    border-radius: 20px;
     padding: 0;
     position: relative;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .menu-item-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+.menu-item-card:active {
+    transform: translateY(-4px) scale(0.99);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15), inset 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card-coral {
@@ -221,20 +268,29 @@ html{
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background: white;
-    border: none;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: all 0.3s;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
 .card-icon-btn:hover {
     background: var(--coral-primary);
     color: white;
     transform: scale(1.15);
+    box-shadow: 0 6px 20px rgba(216, 93, 111, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.card-icon-btn:active {
+    background: var(--coral-dark);
+    transform: scale(1.05);
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 .card-icon-btn i {
@@ -252,17 +308,27 @@ html{
     justify-content: space-between;
     align-items: flex-start;
     padding: 24px;
-    background: var(--cream-bg);
-    border-radius: 12px;
-    transition: all 0.3s;
+    background: rgba(245, 239, 230, 0.5);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border-radius: 16px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     border-left: 4px solid transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
 .menu-list-item:hover {
-    background: white;
+    background: rgba(255, 255, 255, 0.7);
     transform: translateX(8px);
     border-left-color: var(--coral-primary);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.menu-list-item:active {
+    background: rgba(255, 255, 255, 0.8);
+    transform: translateX(4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1), inset 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .list-item-info {

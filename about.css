@@ -1,6 +1,5 @@
 .page-about {
     background: var(--cream-light);
-    padding-top: 100px;
 }
 
 .about-hero {
@@ -23,12 +22,16 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
     padding: 10px 20px;
     border-radius: 25px;
     font-size: 0.9rem;
     font-weight: 600;
     margin-bottom: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
 .hero-badge i {
@@ -74,8 +77,9 @@
     width: 100%;
     height: 500px;
     object-fit: cover;
-    border-radius: 20px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    border-radius: 24px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .story-section {
@@ -94,7 +98,9 @@
     width: 100%;
     height: 500px;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 24px;
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .story-content h2 {
@@ -122,8 +128,13 @@
     align-items: flex-start;
     gap: 16px;
     padding: 20px;
-    background: var(--cream-bg);
-    border-radius: 12px;
+    background: rgba(245, 239, 230, 0.6);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .story-feature i {
@@ -179,9 +190,13 @@
     padding: 40px;
     border-radius: 24px;
     background: linear-gradient(135deg, rgba(216, 93, 111, 0.1), rgba(201, 169, 97, 0.15));
+    backdrop-filter: blur(30px) saturate(180%);
+    -webkit-backdrop-filter: blur(30px) saturate(180%);
     display: flex;
     flex-direction: column;
     gap: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
 .highlight-intro h3 {
@@ -201,12 +216,15 @@
     align-items: center;
     gap: 8px;
     background: rgba(216, 93, 111, 0.15);
+    backdrop-filter: blur(10px);
     color: var(--coral-primary);
     font-weight: 600;
     padding: 8px 16px;
     border-radius: 999px;
     font-size: 0.85rem;
     letter-spacing: 0.05em;
+    border: 1px solid rgba(216, 93, 111, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 .highlight-list {
@@ -240,10 +258,14 @@
 
 .highlight-stat {
     background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
     padding: 20px 24px;
     border-radius: 16px;
     text-align: center;
     min-width: 140px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
 .highlight-stat .stat-number {
@@ -271,13 +293,22 @@
     border-radius: 20px;
     overflow: hidden;
     align-items: stretch;
-    transition: transform 0.3s;
-    background: white;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(30px) saturate(180%);
+    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
 .speciality-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 20px 48px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.speciality-card:active {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12), inset 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .speciality-image {
@@ -331,12 +362,21 @@
     gap: 32px;
     border-radius: 28px;
     overflow: hidden;
-    background: white;
-    transition: transform 0.3s;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(30px) saturate(180%);
+    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 .team-lead:hover {
     transform: translateY(-6px);
-    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 20px 48px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.team-lead:active {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12), inset 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .team-lead-media img {
@@ -360,10 +400,13 @@
     padding: 8px 18px;
     border-radius: 999px;
     background: rgba(216, 93, 111, 0.15);
+    backdrop-filter: blur(10px);
     color: var(--coral-primary);
     font-size: 0.85rem;
     font-weight: 600;
     letter-spacing: 0.05em;
+    border: 1px solid rgba(216, 93, 111, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 .team-lead-content h3 {
@@ -412,15 +455,24 @@
     display: grid;
     grid-template-columns: 160px 1fr;
     gap: 24px;
-    background: white;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(30px) saturate(180%);
+    -webkit-backdrop-filter: blur(30px) saturate(180%);
     border-radius: 24px;
     overflow: hidden;
-    transition: transform 0.3s;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
 .member-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 48px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.member-card:active {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12), inset 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .member-card img {
@@ -467,12 +519,15 @@
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    background: var(--cream-bg);
+    background: rgba(245, 239, 230, 0.6);
+    backdrop-filter: blur(10px);
     color: var(--text-dark);
     padding: 8px 14px;
     border-radius: 999px;
     font-size: 0.85rem;
     font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
 .member-tags i {
