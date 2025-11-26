@@ -9,9 +9,6 @@ A modern, fully responsive restaurant website featuring glassmorphism design, sm
 ## Pages
 
 - **Home** - Hero section, weekly specials, statistics, testimonials
-- **Menu** - 7 categories with sidebar navigation and active section highlighting
-- **About** - Brand story, team profiles, and specialties
-- **Contact** - Contact form, location details, and social links
 
 ## Tech Stack
 
