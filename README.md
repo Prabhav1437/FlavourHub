@@ -30,13 +30,7 @@ A modern, fully responsive restaurant website featuring glassmorphism design, sm
 
 ```
 ├── index.html
-├── menu.html
-├── about.html
-├── contact.html
 ├── style.css
-├── menu.css
-├── about.css
-├── contact.css
 └── media/
 ```
 
