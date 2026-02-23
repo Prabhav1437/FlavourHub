@@ -1,7 +1,6 @@
 # FlavourHUB 
 
 Premium vegetarian restaurant website built with HTML and CSS.
-
 ## Overview
 
 A modern, fully responsive restaurant website featuring glassmorphism design, smooth animations, and an intuitive user experience.
